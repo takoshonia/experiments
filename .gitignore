@@ -1,0 +1,25 @@
+# Virtual environment
+.venv/
+venv/
+
+# Packaging metadata
+*.egg-info/
+
+# Python caches/bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# CLI outputs
+out*.txt
+report*.json
+
+# Editor / IDE
+.idea/
+.vscode/
+
+# Secrets (never commit)
+*.pem
+*.key
+.env
+.env.*

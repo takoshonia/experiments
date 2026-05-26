@@ -1,0 +1,18 @@
+[project]
+name = "geostt-correct"
+version = "0.1.0"
+description = "Constrained Georgian speech-to-text post-correction (local Ollama)"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["fastapi", "uvicorn"]
+
+[project.scripts]
+geostt-correct = "geostt_correct.cli:main"
+geostt-api = "geostt_correct.api_cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["geostt_correct*"]
